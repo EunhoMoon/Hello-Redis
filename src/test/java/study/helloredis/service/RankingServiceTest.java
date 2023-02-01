@@ -44,17 +44,15 @@ class RankingServiceTest {
         int[][] dots = {{1, 4}, {9, 2}, {3, 8}, {11, 6}};
         int answer = 0;
 
-        for (int i = 0; i < dots.length; i++) {
-            for (int j = i + 1; j <= 3; j++) {
-                int x1 = dots[i][0] - dots[j][0];
-                int y1 = dots[i][1] - dots[j][1];
+        int x1 = dots[0][0];
+        int y1 = dots[0][1];
 
-                int x2 = dots[dots.length-j][0] - dots[dots.length-j][0];
-                int y2 = dots[dots.length-j][1] - dots[dots.length-i][1];
+        for (int i = 1; i < 4; i++) {
+            int x2 = dots[i][0];
+            int y2 = dots[i][1];
 
-                if (x1 == x2 && y1 == y2) {
-                    answer++;
-                }
+            if (x1 == x2 && y1 == y2) {
+                answer++;
             }
         }
 
