@@ -37,4 +37,8 @@ public class LoginController {
         return name;
     }
 
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 0a617cd450344d596017cb6ce8739cb9e2e2862d
